@@ -18,9 +18,9 @@ export class AppService {
       return await this.bot.telegram.sendMessage(
         +process.env.CHANNEL_ID,
         `
-        name: ${data.name}
-        surname: ${data.surname}
-        phone_number: ${data.phone_number}
+name: ${data.name}
+surname: ${data.surname}
+phone_number: ${data.phone_number}
         `
       );
     } catch (error) {}
